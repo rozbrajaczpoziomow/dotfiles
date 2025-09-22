@@ -142,7 +142,7 @@ fi
 sshagentpid=$(pgrep -u "$USER" ssh-agent | head -1)
 if [ "$sshagentpid" ]
 then
-    export SSH_AUTH_SOCK='/tmp/ssh-agent.sock'
+    export SSH_AUTH_SOCK="/tmp/ssh-agent-$USER.sock"
     export SSH_AGENT_PID="$sshagentpid"
 else
     eval $(ssh-agent -a "/tmp/ssh-agent-$USER.sock") >/dev/null
