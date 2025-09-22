@@ -1,0 +1,12 @@
+alias clip='xclip -selection clipboard'
+alias ls='eza'
+alias ll='eza -laHg'
+alias l='eza -lHg'
+#alias l='ls -lAh'
+alias journalctl='journalctl -o short-iso -n'
+# alias feh='feh -Fd --draw-exif'
+
+alias wines='WINEESYNC=1 wine start /unix'
+alias neofetch='hyfetch'
+alias cat='batcat'
+alias ffuf='ffuf -c -http2'
